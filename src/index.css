@@ -2,3 +2,9 @@
 *{
     box-sizing:border-box ;
 }
+@theme {
+    --color-blue-3: #002b5b;
+    --color-blue-2: #19406a;
+    --color-blue-1: #8094ad;
+    --color-green-1: #36c6c0
+}

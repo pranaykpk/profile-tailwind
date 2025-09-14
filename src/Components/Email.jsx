@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react"
+import Button from "./Button";
 const Email =()=>{
     const [otpInput, setOtpInput] = useState(new Array(6).fill(""))
-    const refArr = useRef([]);
+    const refArr = useRef([]); 
     const handleOnChange = (value,idx)=>{
         if(isNaN(value)) return;
         if(value=="") return;
@@ -40,6 +41,7 @@ const Email =()=>{
         )
        })}
        </div>
+       <Button goto={"/profile"} isDisabled={true}>Submit</Button>
     </div>
  </>
 }
